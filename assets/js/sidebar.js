@@ -1,9 +1,9 @@
 function renderArticles(articles) {
-    var artcilesDiv = $(".related-articles");
+    var articlesDiv = $(".related-articles");
     articles.forEach(article => {
         var str = "<div class=\"article sans\"><a href=\"" + article.url + "\">" + article.title + 
                   "</a><p>- " + article.author + "</p></div>";
-        artcilesDiv.append($(str));
+        articlesDiv.append($(str));
     });
 }
 
