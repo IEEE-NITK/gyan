@@ -10,6 +10,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Install Ruby
+        run: sudo apt-get install ruby-full
+
       - name: Install Gems
         run: sudo gem install jekyll html-proofer jekyll-paginate jemoji
 
